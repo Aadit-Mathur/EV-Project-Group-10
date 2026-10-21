@@ -1,0 +1,17 @@
+'''
+Create a virtual environment and install the required packages using the following command:
+python -m venv myenv
+
+Activate the virtual environment:
+myenv\Scripts\activate
+
+Install the required packages:
+pip install -r requirements.txt
+'''
+
+numpy
+pandas
+matplotlib
+scikit-learn
+PuLP
+jupyter
