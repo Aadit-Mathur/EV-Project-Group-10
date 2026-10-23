@@ -13,5 +13,6 @@ numpy
 pandas
 matplotlib
 scikit-learn
-PuLP
+PuLP>=2.7,<3
 jupyter
+pytest
