@@ -1,0 +1,3 @@
+region,region_name,year,metric,source_value_lb_per_mwh,emission_factor_kg_CO2_per_kWh,use
+CAMX,WECC California,2018,total_output_CO2,496.5,0.225208611705,Primary average output factor candidate
+CAMX,WECC California,2018,non_baseload_output_CO2,929.5,0.42161410791500004,Sensitivity candidate; not the average factor

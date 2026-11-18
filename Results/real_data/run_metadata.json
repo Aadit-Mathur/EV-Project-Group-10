@@ -1,0 +1,26 @@
+{
+  "scenario_count": 45,
+  "session_count": 100,
+  "forecast_test_start_utc": "2018-06-09T23:00:00+00:00",
+  "forecast_scenario_count": 6,
+  "emissions_factor_kg_co2_per_kwh": 0.225209,
+  "pv_capacity_kwp": 100.0,
+  "pv_performance_ratio": 0.8,
+  "base_load_kw": 41.66666666666666,
+  "primary_lp_weights": {
+    "cost": 1,
+    "peak": 5,
+    "solar": 2,
+    "description": "Chosen priorities; objectives are normalized before weighting"
+  },
+  "sensitivity_lp_weights": {
+    "cost": 1,
+    "peak": 1,
+    "solar": 1,
+    "description": "Equal-weight sensitivity only"
+  },
+  "notes": [
+    "Forecast LP results are restricted to scenarios fully covered by the chronological test-tail predictions.",
+    "All metrics are evaluated against actual scenario inputs."
+  ]
+}
