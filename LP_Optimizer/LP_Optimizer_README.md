@@ -37,6 +37,13 @@ roadmap's normalized objective:
 base-load-plus-available-EV-power profile. Solar is credited only after base
 load is served.
 
+The 1:5:2 weighting gives relative priority to normalized peak grid demand,
+charging cost, and solar utilization, respectively. The objectives use
+different physical units, so they are divided by their reference scales before
+they are combined. The weights are deliberately chosen study priorities rather
+than empirically derived parameters. An equal 1:1:1 weighting run is used only
+as a sensitivity comparison and does not replace the primary 1:5:2 result.
+
 ## Usage
 
 ```python

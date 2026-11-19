@@ -1,0 +1,3 @@
+model,test_mae_kw,test_rmse_kw,validation_mae_kw,validation_rmse_kw
+Random Forest,1.558790,2.321885,0.784120,1.337041
+Persistence (same-hour historical),0.696805,2.043225,,

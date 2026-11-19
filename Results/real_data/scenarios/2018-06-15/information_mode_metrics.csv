@@ -1,0 +1,3 @@
+information_mode,feasible,validation_error_count,charging_cost,peak_grid_import_kw,solar_energy_to_ev_kwh,grid_energy_imported_kwh,co2_kg,ev_grid_energy_kwh,validation_errors
+lp_forecast,True,0.0,0.9642580352743991,48.86666666666666,9.92696169,598.8949322133332,134.87652878883253,25.688560555509998,
+lp_perfect_foresight,True,0.0,0.8850137782349997,48.53757766666666,9.92696169,598.8949322333331,134.8765287933367,25.688560555509998,

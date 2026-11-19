@@ -6,6 +6,13 @@ __pycache__/
 # C extensions
 *.so
 
+# Word documents
+*.docx
+generate_report.py
+
+# Locally generated presentation deck (source and supporting assets are tracked)
+Presentation/EV_Smart_Charging_Presentation.pptx
+
 # Distribution / packaging
 .Python
 build/

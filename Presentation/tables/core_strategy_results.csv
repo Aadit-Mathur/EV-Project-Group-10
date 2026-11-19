@@ -1,0 +1,4 @@
+strategy,scenarios,feasible,mean_incremental_charging_cost_usd_per_scenario,mean_peak_grid_import_kw,mean_solar_to_ev_kwh_per_scenario,mean_grid_energy_imported_kwh_per_scenario,mean_co2_kg_per_scenario
+Uncontrolled,45,True,1.105246,42.889149,4.527591,623.038487,140.313875
+TOU,45,True,0.679924,44.318300,4.367591,623.198487,140.349908
+LP smart charging,45,True,0.421436,42.895261,8.868741,618.697337,139.336209

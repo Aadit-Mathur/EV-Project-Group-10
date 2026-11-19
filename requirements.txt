@@ -1,13 +1,6 @@
-'''
-Create a virtual environment and install the required packages using the following command:
-python -m venv myenv
-
-Activate the virtual environment:
-myenv\Scripts\activate
-
-Install the required packages:
-pip install -r requirements.txt
-'''
+# Create a virtual environment with: python -m venv .venv
+# Activate it with: .venv\Scripts\activate
+# Install dependencies with: pip install -r requirements.txt
 
 numpy
 pandas
@@ -16,3 +9,5 @@ scikit-learn
 PuLP>=2.7,<3
 jupyter
 pytest
+python-docx
+python-pptx>=1.0.2,<2.0.0

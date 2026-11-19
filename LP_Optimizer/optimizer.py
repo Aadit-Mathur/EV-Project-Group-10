@@ -36,7 +36,13 @@ class EVSession:
 
 @dataclass(frozen=True)
 class LPConfig:
-    """Numerical and solver settings for :func:`run_lp`."""
+    """Numerical and solver settings for :func:`run_lp`.
+
+    The default 1:5:2 weights prioritize normalized peak grid demand while
+    retaining normalized charging cost and solar utilization. They are chosen
+    project priorities, not fitted constants. Equal weights are available only
+    for a separately labelled sensitivity run.
+    """
 
     slot_hours: float = 1.0
     cost_weight: float = 1.0
@@ -246,8 +252,8 @@ def _validate_inputs(
     for session in sessions:
         if not session.ev_id or session.arrival < 0 or session.departure <= session.arrival:
             raise ValueError(f"invalid availability window for {session.ev_id!r}")
-        if session.energy_kwh <= 0 or session.max_power_kw <= 0:
-            raise ValueError(f"energy and max power must be positive for {session.ev_id!r}")
+        if session.energy_kwh < 0 or session.max_power_kw <= 0:
+            raise ValueError(f"energy must be non-negative and max power positive for {session.ev_id!r}")
         if not 0 < session.efficiency <= 1:
             raise ValueError(f"efficiency must be in (0, 1] for {session.ev_id!r}")
 

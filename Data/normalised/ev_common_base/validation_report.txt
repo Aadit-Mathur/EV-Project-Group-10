@@ -1,0 +1,59 @@
+EV SMART CHARGING — IMPLEMENTATION-READY COMMON-BASE VALIDATION REPORT
+=====================================================================
+
+1. ACN ORIGINAL DATA
+--------------------
+Session files: 100; telemetry rows: 401449; read errors: 0.
+Session energy values populated: 100/100; total energy proxy: 663.206847 kWh.
+Two verified no-charging sessions assigned 0.0 kWh; method flag preserved.
+Energy target for other sessions: maximum cumulative Energy Delivered (kWh) within session.
+Non-monotonic pre-UNPLUGGED sessions retained and flagged: 2. IDs:
+- 2-39-123-23-2018-05-02T18-23-24-918058
+- 2-39-123-23-2018-06-04T16-12-37-722218
+Observed max power > assumed 7.2 kW: 3 sessions. Raw telemetry is not clipped.
+Arrival/departure timestamps remain first/last telemetry proxies.
+
+2. PV AND BASE LOAD
+-------------------
+PV capacity: 100 kWp; PR: 0.80; formula: min(100, 100*max(GHI,0)/1000*0.80) kW.
+Base load: 41.666667 kW constant scenario assumption.
+Hours with PV surplus after base load: 333/1121.
+Maximum PV output: 82.480 kW; maximum surplus: 40.813 kW.
+Solar-to-base and solar-surplus columns are explicitly provided.
+Sensitivity capacities: 75 and 125 kWp.
+
+3. SCENARIO BOUNDARIES
+----------------------
+Scenario groups: 45; sessions mapped: 100.
+Minimum horizon: 24 hours; maximum horizon: 39 hours.
+Arrival containment failures: 0; departure containment failures: 0.
+Policy: local-midnight start, minimum 24h, extend to next whole-hour boundary after latest departure for that arrival date. All strategies must use identical scenario windows.
+
+4. TARIFF
+---------
+Corrected bundled SCE TOU-EV-4 energy prices retained. TOU-EV-9 period mapping and winter super-off-peak proxy remain explicitly approximate. Monthly customer and demand charges excluded from hourly energy cost.
+
+5. GRID EMISSIONS
+-----------------
+Primary: eGRID2018 CAMX average output = 0.225209 kg CO2/kWh.
+Sensitivity: CAMX non-baseload = 0.421614 kg CO2/kWh.
+Primary replaces roadmap fallback 0.4 kg/kWh as an explicit documented project choice; average output is not marginal emissions.
+
+6. COMMON HOURLY INPUTS
+-----------------------
+Rows: 1121; duplicate local timestamps: 0.
+PV output populated: 1121/1121.
+Base load populated: 1121/1121.
+Tariff populated: 1121/1121.
+
+7. IMPLEMENTATION LIMITATIONS (DOCUMENTED, NOT BLOCKERS)
+-------------------------------------------------------
+- ACN first/last timestamps are proxies, not authoritative plug-in/unplug times.
+- ACN delivered energy is a proxy for required energy, not original driver request.
+- 7.2 kW is a common modelling cap, not verified station metadata.
+- PV conversion uses horizontal GHI and simplified PR; no tilt/azimuth/temperature model.
+- Base load is constant and assumed, not measured.
+- Tariff period mapping is approximate; tariff eligibility not independently verified.
+- Dataset is a composite Pasadena-area simulation, not one measured physical site.
+
+VALIDATION STATUS: All identified structural blockers resolved; ready for LP implementation under the documented assumptions.

@@ -1,0 +1,602 @@
+﻿[
+    {
+        "name":  "2-39-123-23-2018-05-01T17-11-32-081386.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-01T17-11-32-081386.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-01T17-11-32-081386.csv.gz",
+        "size":  25679
+    },
+    {
+        "name":  "2-39-123-23-2018-05-01T20-12-26-312220.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-01T20-12-26-312220.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-01T20-12-26-312220.csv.gz",
+        "size":  25644
+    },
+    {
+        "name":  "2-39-123-23-2018-05-02T13-25-55-840259.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-02T13-25-55-840259.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-02T13-25-55-840259.csv.gz",
+        "size":  9716
+    },
+    {
+        "name":  "2-39-123-23-2018-05-02T15-15-17-269387.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-02T15-15-17-269387.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-02T15-15-17-269387.csv.gz",
+        "size":  26631
+    },
+    {
+        "name":  "2-39-123-23-2018-05-02T18-23-24-918058.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-02T18-23-24-918058.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-02T18-23-24-918058.csv.gz",
+        "size":  34684
+    },
+    {
+        "name":  "2-39-123-23-2018-05-03T15-50-09-887699.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-03T15-50-09-887699.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-03T15-50-09-887699.csv.gz",
+        "size":  287
+    },
+    {
+        "name":  "2-39-123-23-2018-05-03T15-51-10-598352.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-03T15-51-10-598352.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-03T15-51-10-598352.csv.gz",
+        "size":  271
+    },
+    {
+        "name":  "2-39-123-23-2018-05-03T16-02-46-386787.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-03T16-02-46-386787.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-03T16-02-46-386787.csv.gz",
+        "size":  39720
+    },
+    {
+        "name":  "2-39-123-23-2018-05-04T15-48-44-986155.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-04T15-48-44-986155.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-04T15-48-44-986155.csv.gz",
+        "size":  12437
+    },
+    {
+        "name":  "2-39-123-23-2018-05-04T19-04-58-479537.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-04T19-04-58-479537.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-04T19-04-58-479537.csv.gz",
+        "size":  14132
+    },
+    {
+        "name":  "2-39-123-23-2018-05-04T23-11-49-324939.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-04T23-11-49-324939.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-04T23-11-49-324939.csv.gz",
+        "size":  219
+    },
+    {
+        "name":  "2-39-123-23-2018-05-05T04-13-27-421279.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-05T04-13-27-421279.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-05T04-13-27-421279.csv.gz",
+        "size":  480
+    },
+    {
+        "name":  "2-39-123-23-2018-05-05T15-03-41-867372.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-05T15-03-41-867372.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-05T15-03-41-867372.csv.gz",
+        "size":  8988
+    },
+    {
+        "name":  "2-39-123-23-2018-05-05T20-16-38-010156.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-05T20-16-38-010156.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-05T20-16-38-010156.csv.gz",
+        "size":  8056
+    },
+    {
+        "name":  "2-39-123-23-2018-05-07T13-18-55-316809.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-07T13-18-55-316809.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-07T13-18-55-316809.csv.gz",
+        "size":  9718
+    },
+    {
+        "name":  "2-39-123-23-2018-05-07T15-21-18-503581.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-07T15-21-18-503581.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-07T15-21-18-503581.csv.gz",
+        "size":  32008
+    },
+    {
+        "name":  "2-39-123-23-2018-05-08T16-09-29-686546.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-08T16-09-29-686546.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-08T16-09-29-686546.csv.gz",
+        "size":  27732
+    },
+    {
+        "name":  "2-39-123-23-2018-05-09T16-23-45-324730.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-09T16-23-45-324730.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-09T16-23-45-324730.csv.gz",
+        "size":  47157
+    },
+    {
+        "name":  "2-39-123-23-2018-05-10T02-57-21-240369.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-10T02-57-21-240369.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-10T02-57-21-240369.csv.gz",
+        "size":  7100
+    },
+    {
+        "name":  "2-39-123-23-2018-05-10T16-38-59-635468.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-10T16-38-59-635468.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-10T16-38-59-635468.csv.gz",
+        "size":  290
+    },
+    {
+        "name":  "2-39-123-23-2018-05-10T16-49-02-592477.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-10T16-49-02-592477.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-10T16-49-02-592477.csv.gz",
+        "size":  15725
+    },
+    {
+        "name":  "2-39-123-23-2018-05-11T13-28-04-355442.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-11T13-28-04-355442.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-11T13-28-04-355442.csv.gz",
+        "size":  15767
+    },
+    {
+        "name":  "2-39-123-23-2018-05-11T16-51-01-189882.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-11T16-51-01-189882.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-11T16-51-01-189882.csv.gz",
+        "size":  408
+    },
+    {
+        "name":  "2-39-123-23-2018-05-11T17-01-11-962363.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-11T17-01-11-962363.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-11T17-01-11-962363.csv.gz",
+        "size":  309
+    },
+    {
+        "name":  "2-39-123-23-2018-05-11T17-01-59-312061.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-11T17-01-59-312061.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-11T17-01-59-312061.csv.gz",
+        "size":  75009
+    },
+    {
+        "name":  "2-39-123-23-2018-05-12T01-36-18-997919.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-12T01-36-18-997919.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-12T01-36-18-997919.csv.gz",
+        "size":  75212
+    },
+    {
+        "name":  "2-39-123-23-2018-05-12T22-16-16-074103.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-12T22-16-16-074103.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-12T22-16-16-074103.csv.gz",
+        "size":  38811
+    },
+    {
+        "name":  "2-39-123-23-2018-05-14T01-41-27-071348.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-14T01-41-27-071348.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-14T01-41-27-071348.csv.gz",
+        "size":  56303
+    },
+    {
+        "name":  "2-39-123-23-2018-05-14T16-02-41-571040.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-14T16-02-41-571040.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-14T16-02-41-571040.csv.gz",
+        "size":  79013
+    },
+    {
+        "name":  "2-39-123-23-2018-05-15T02-43-19-308145.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-15T02-43-19-308145.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-15T02-43-19-308145.csv.gz",
+        "size":  21491
+    },
+    {
+        "name":  "2-39-123-23-2018-05-15T16-23-50-768231.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-15T16-23-50-768231.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-15T16-23-50-768231.csv.gz",
+        "size":  12145
+    },
+    {
+        "name":  "2-39-123-23-2018-05-15T17-43-50-446936.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-15T17-43-50-446936.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-15T17-43-50-446936.csv.gz",
+        "size":  246
+    },
+    {
+        "name":  "2-39-123-23-2018-05-15T17-44-25-925938.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-15T17-44-25-925938.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-15T17-44-25-925938.csv.gz",
+        "size":  273
+    },
+    {
+        "name":  "2-39-123-23-2018-05-15T18-33-02-098690.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-15T18-33-02-098690.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-15T18-33-02-098690.csv.gz",
+        "size":  485
+    },
+    {
+        "name":  "2-39-123-23-2018-05-15T19-25-50-392100.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-15T19-25-50-392100.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-15T19-25-50-392100.csv.gz",
+        "size":  47168
+    },
+    {
+        "name":  "2-39-123-23-2018-05-16T01-42-18-800887.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-16T01-42-18-800887.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-16T01-42-18-800887.csv.gz",
+        "size":  23859
+    },
+    {
+        "name":  "2-39-123-23-2018-05-16T14-51-04-500612.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-16T14-51-04-500612.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-16T14-51-04-500612.csv.gz",
+        "size":  1285
+    },
+    {
+        "name":  "2-39-123-23-2018-05-16T16-05-47-496172.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-16T16-05-47-496172.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-16T16-05-47-496172.csv.gz",
+        "size":  44070
+    },
+    {
+        "name":  "2-39-123-23-2018-05-17T16-03-21-756809.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-17T16-03-21-756809.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-17T16-03-21-756809.csv.gz",
+        "size":  37795
+    },
+    {
+        "name":  "2-39-123-23-2018-05-18T16-29-26-742107.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-18T16-29-26-742107.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-18T16-29-26-742107.csv.gz",
+        "size":  51297
+    },
+    {
+        "name":  "2-39-123-23-2018-05-19T03-11-58-737764.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-19T03-11-58-737764.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-19T03-11-58-737764.csv.gz",
+        "size":  482
+    },
+    {
+        "name":  "2-39-123-23-2018-05-19T14-53-09-631339.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-19T14-53-09-631339.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-19T14-53-09-631339.csv.gz",
+        "size":  15695
+    },
+    {
+        "name":  "2-39-123-23-2018-05-20T01-39-06-733521.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-20T01-39-06-733521.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-20T01-39-06-733521.csv.gz",
+        "size":  5758
+    },
+    {
+        "name":  "2-39-123-23-2018-05-20T18-10-52-354052.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-20T18-10-52-354052.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-20T18-10-52-354052.csv.gz",
+        "size":  46975
+    },
+    {
+        "name":  "2-39-123-23-2018-05-20T22-56-37-864019.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-20T22-56-37-864019.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-20T22-56-37-864019.csv.gz",
+        "size":  264
+    },
+    {
+        "name":  "2-39-123-23-2018-05-21T17-21-02-296592.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-21T17-21-02-296592.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-21T17-21-02-296592.csv.gz",
+        "size":  49786
+    },
+    {
+        "name":  "2-39-123-23-2018-05-22T02-17-00-702883.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-22T02-17-00-702883.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-22T02-17-00-702883.csv.gz",
+        "size":  315
+    },
+    {
+        "name":  "2-39-123-23-2018-05-22T16-58-52-879408.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-22T16-58-52-879408.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-22T16-58-52-879408.csv.gz",
+        "size":  48225
+    },
+    {
+        "name":  "2-39-123-23-2018-05-23T16-11-12-194131.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-23T16-11-12-194131.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-23T16-11-12-194131.csv.gz",
+        "size":  58285
+    },
+    {
+        "name":  "2-39-123-23-2018-05-24T16-04-42-052097.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-24T16-04-42-052097.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-24T16-04-42-052097.csv.gz",
+        "size":  38725
+    },
+    {
+        "name":  "2-39-123-23-2018-05-25T15-56-33-640234.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-25T15-56-33-640234.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-25T15-56-33-640234.csv.gz",
+        "size":  2147
+    },
+    {
+        "name":  "2-39-123-23-2018-05-25T16-25-23-478251.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-25T16-25-23-478251.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-25T16-25-23-478251.csv.gz",
+        "size":  71505
+    },
+    {
+        "name":  "2-39-123-23-2018-05-26T05-03-31-304486.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-26T05-03-31-304486.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-26T05-03-31-304486.csv.gz",
+        "size":  56334
+    },
+    {
+        "name":  "2-39-123-23-2018-05-26T23-09-15-242773.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-26T23-09-15-242773.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-26T23-09-15-242773.csv.gz",
+        "size":  27869
+    },
+    {
+        "name":  "2-39-123-23-2018-05-27T19-10-40-496174.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-27T19-10-40-496174.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-27T19-10-40-496174.csv.gz",
+        "size":  36024
+    },
+    {
+        "name":  "2-39-123-23-2018-05-28T18-55-44-550125.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-28T18-55-44-550125.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-28T18-55-44-550125.csv.gz",
+        "size":  30647
+    },
+    {
+        "name":  "2-39-123-23-2018-05-29T05-49-38-242151.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-29T05-49-38-242151.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-29T05-49-38-242151.csv.gz",
+        "size":  8077
+    },
+    {
+        "name":  "2-39-123-23-2018-05-29T15-58-36-700452.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-29T15-58-36-700452.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-29T15-58-36-700452.csv.gz",
+        "size":  21096
+    },
+    {
+        "name":  "2-39-123-23-2018-05-29T18-14-38-124236.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-29T18-14-38-124236.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-29T18-14-38-124236.csv.gz",
+        "size":  43795
+    },
+    {
+        "name":  "2-39-123-23-2018-05-30T15-42-27-606474.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-30T15-42-27-606474.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-30T15-42-27-606474.csv.gz",
+        "size":  65389
+    },
+    {
+        "name":  "2-39-123-23-2018-05-31T03-29-45-115641.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-31T03-29-45-115641.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-31T03-29-45-115641.csv.gz",
+        "size":  16032
+    },
+    {
+        "name":  "2-39-123-23-2018-05-31T15-20-35-493640.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-31T15-20-35-493640.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-05-31T15-20-35-493640.csv.gz",
+        "size":  39479
+    },
+    {
+        "name":  "2-39-123-23-2018-06-01T00-45-14-140575.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-01T00-45-14-140575.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-01T00-45-14-140575.csv.gz",
+        "size":  27807
+    },
+    {
+        "name":  "2-39-123-23-2018-06-01T14-24-10-814176.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-01T14-24-10-814176.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-01T14-24-10-814176.csv.gz",
+        "size":  32645
+    },
+    {
+        "name":  "2-39-123-23-2018-06-01T22-33-48-709471.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-01T22-33-48-709471.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-01T22-33-48-709471.csv.gz",
+        "size":  19858
+    },
+    {
+        "name":  "2-39-123-23-2018-06-02T07-48-00-506188.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-02T07-48-00-506188.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-02T07-48-00-506188.csv.gz",
+        "size":  1145
+    },
+    {
+        "name":  "2-39-123-23-2018-06-02T18-13-39-758926.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-02T18-13-39-758926.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-02T18-13-39-758926.csv.gz",
+        "size":  17912
+    },
+    {
+        "name":  "2-39-123-23-2018-06-02T20-06-22-053637.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-02T20-06-22-053637.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-02T20-06-22-053637.csv.gz",
+        "size":  24047
+    },
+    {
+        "name":  "2-39-123-23-2018-06-03T05-55-06-709143.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-03T05-55-06-709143.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-03T05-55-06-709143.csv.gz",
+        "size":  5583
+    },
+    {
+        "name":  "2-39-123-23-2018-06-03T07-03-21-204915.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-03T07-03-21-204915.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-03T07-03-21-204915.csv.gz",
+        "size":  6962
+    },
+    {
+        "name":  "2-39-123-23-2018-06-03T12-07-07-067011.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-03T12-07-07-067011.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-03T12-07-07-067011.csv.gz",
+        "size":  186
+    },
+    {
+        "name":  "2-39-123-23-2018-06-03T12-07-38-537423.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-03T12-07-38-537423.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-03T12-07-38-537423.csv.gz",
+        "size":  553
+    },
+    {
+        "name":  "2-39-123-23-2018-06-03T14-30-09-830842.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-03T14-30-09-830842.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-03T14-30-09-830842.csv.gz",
+        "size":  6674
+    },
+    {
+        "name":  "2-39-123-23-2018-06-04T00-30-28-082546.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-04T00-30-28-082546.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-04T00-30-28-082546.csv.gz",
+        "size":  51020
+    },
+    {
+        "name":  "2-39-123-23-2018-06-04T16-12-37-722218.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-04T16-12-37-722218.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-04T16-12-37-722218.csv.gz",
+        "size":  39658
+    },
+    {
+        "name":  "2-39-123-23-2018-06-06T01-04-14-188405.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-06T01-04-14-188405.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-06T01-04-14-188405.csv.gz",
+        "size":  3485
+    },
+    {
+        "name":  "2-39-123-23-2018-06-06T02-22-15-858038.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-06T02-22-15-858038.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-06T02-22-15-858038.csv.gz",
+        "size":  49109
+    },
+    {
+        "name":  "2-39-123-23-2018-06-06T16-02-39-423722.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-06T16-02-39-423722.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-06T16-02-39-423722.csv.gz",
+        "size":  42679
+    },
+    {
+        "name":  "2-39-123-23-2018-06-07T01-46-59-950260.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-07T01-46-59-950260.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-07T01-46-59-950260.csv.gz",
+        "size":  12101
+    },
+    {
+        "name":  "2-39-123-23-2018-06-07T03-35-57-696708.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-07T03-35-57-696708.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-07T03-35-57-696708.csv.gz",
+        "size":  17207
+    },
+    {
+        "name":  "2-39-123-23-2018-06-07T17-13-24-196722.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-07T17-13-24-196722.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-07T17-13-24-196722.csv.gz",
+        "size":  76471
+    },
+    {
+        "name":  "2-39-123-23-2018-06-08T03-06-24-906823.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-08T03-06-24-906823.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-08T03-06-24-906823.csv.gz",
+        "size":  24519
+    },
+    {
+        "name":  "2-39-123-23-2018-06-08T05-25-11-362527.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-08T05-25-11-362527.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-08T05-25-11-362527.csv.gz",
+        "size":  21898
+    },
+    {
+        "name":  "2-39-123-23-2018-06-08T13-54-00-129646.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-08T13-54-00-129646.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-08T13-54-00-129646.csv.gz",
+        "size":  14792
+    },
+    {
+        "name":  "2-39-123-23-2018-06-08T15-26-05-605220.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-08T15-26-05-605220.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-08T15-26-05-605220.csv.gz",
+        "size":  67775
+    },
+    {
+        "name":  "2-39-123-23-2018-06-09T01-20-20-919291.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-09T01-20-20-919291.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-09T01-20-20-919291.csv.gz",
+        "size":  32501
+    },
+    {
+        "name":  "2-39-123-23-2018-06-09T23-49-39-188504.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-09T23-49-39-188504.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-09T23-49-39-188504.csv.gz",
+        "size":  14629
+    },
+    {
+        "name":  "2-39-123-23-2018-06-10T20-47-00-226188.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-10T20-47-00-226188.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-10T20-47-00-226188.csv.gz",
+        "size":  28763
+    },
+    {
+        "name":  "2-39-123-23-2018-06-11T16-23-42-180661.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-11T16-23-42-180661.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-11T16-23-42-180661.csv.gz",
+        "size":  58523
+    },
+    {
+        "name":  "2-39-123-23-2018-06-12T02-11-12-286787.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-12T02-11-12-286787.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-12T02-11-12-286787.csv.gz",
+        "size":  21196
+    },
+    {
+        "name":  "2-39-123-23-2018-06-12T15-42-12-109963.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-12T15-42-12-109963.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-12T15-42-12-109963.csv.gz",
+        "size":  79881
+    },
+    {
+        "name":  "2-39-123-23-2018-06-13T03-28-54-471688.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-13T03-28-54-471688.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-13T03-28-54-471688.csv.gz",
+        "size":  19462
+    },
+    {
+        "name":  "2-39-123-23-2018-06-13T15-27-41-699419.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-13T15-27-41-699419.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-13T15-27-41-699419.csv.gz",
+        "size":  9699
+    },
+    {
+        "name":  "2-39-123-23-2018-06-13T16-38-13-889994.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-13T16-38-13-889994.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-13T16-38-13-889994.csv.gz",
+        "size":  46236
+    },
+    {
+        "name":  "2-39-123-23-2018-06-14T01-19-35-323477.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-14T01-19-35-323477.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-14T01-19-35-323477.csv.gz",
+        "size":  39183
+    },
+    {
+        "name":  "2-39-123-23-2018-06-14T16-13-17-019401.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-14T16-13-17-019401.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-14T16-13-17-019401.csv.gz",
+        "size":  35862
+    },
+    {
+        "name":  "2-39-123-23-2018-06-15T16-29-54-322608.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-15T16-29-54-322608.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-15T16-29-54-322608.csv.gz",
+        "size":  18484
+    },
+    {
+        "name":  "2-39-123-23-2018-06-15T18-53-28-751477.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-15T18-53-28-751477.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-15T18-53-28-751477.csv.gz",
+        "size":  39462
+    },
+    {
+        "name":  "2-39-123-23-2018-06-16T01-19-36-231361.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-16T01-19-36-231361.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-16T01-19-36-231361.csv.gz",
+        "size":  43788
+    },
+    {
+        "name":  "2-39-123-23-2018-06-16T06-39-51-118387.csv.gz",
+        "source":  "https://github.com/tongxin-li/ACN-Data-Static/blob/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-16T06-39-51-118387.csv.gz",
+        "download_url":  "https://raw.githubusercontent.com/tongxin-li/ACN-Data-Static/main/time%20series%20data/caltech/California_Garage_01/2-39-123-23-2018-06-16T06-39-51-118387.csv.gz",
+        "size":  5960
+    }
+]
