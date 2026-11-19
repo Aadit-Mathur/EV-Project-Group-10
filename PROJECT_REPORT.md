@@ -38,6 +38,24 @@ The normalized common base contains 100 ACN charging sessions, hourly solar
 generation for Pasadena, an assumed constant base load, reconstructed SCE
 TOU-EV-4 hourly rates, and eGRID2018 CAMX emissions factors.
 
+### 3.1 Data Normalization
+
+The raw EV, solar, tariff, and emissions datasets were preprocessed into a
+common normalized format. Timestamps were standardized to the California local
+time convention and converted consistently across the source datasets. Units
+were aligned, with power expressed in kW, energy in kWh, tariffs in
+currency/kWh, and emissions in kg CO2/kWh. The hourly series were aligned to
+the same timeline so that solar, base load, tariff, and grid-emissions values
+could be matched to the same charging slots.
+
+EV sessions were converted into structured records containing arrival time,
+departure time, required energy, and maximum charging power. Missing values,
+duplicate timestamps, anomalous energy records, and infeasible session data
+were identified and documented. Assumptions such as the constant non-EV base
+load and PV capacity were incorporated explicitly rather than hidden in the
+strategy code. The resulting normalized datasets provide consistent, reproducible
+inputs for uncontrolled charging, TOU charging, and LP smart charging.
+
 The adopted primary grid-emissions factor is 0.225209 kg CO2/kWh. This replaces
 the roadmap fallback of 0.4 kg CO2/kWh only because the implementation-ready
 common base documents a location-matched CAMX factor.
