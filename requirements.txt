@@ -9,3 +9,4 @@ scikit-learn
 PuLP>=2.7,<3
 jupyter
 pytest
+python-docx

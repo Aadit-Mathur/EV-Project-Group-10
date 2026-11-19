@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# Word documents
+*.docx
+generate_report.py
+
 # Distribution / packaging
 .Python
 build/

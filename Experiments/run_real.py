@@ -202,13 +202,57 @@ def run_real_experiment(
         )
     )
     summary.to_csv(output / "strategy_summary.csv", index=False)
-    figure, axes = plt.subplots(1, 2, figsize=(12, 4))
-    summary.plot.bar(x="strategy", y="charging_cost_mean", ax=axes[0], legend=False)
-    axes[0].set_ylabel("Mean incremental charging cost")
-    summary.plot.bar(x="strategy", y="peak_grid_import_kw_mean", ax=axes[1], legend=False)
-    axes[1].set_ylabel("Mean peak grid import (kW)")
-    figure.tight_layout()
-    figure.savefig(output / "strategy_summary.png", dpi=150)
+    label_map = {
+        "lp_equal_weights_sensitivity": "1:1:1 sensitivity",
+        "lp_forecast": "Forecast LP",
+        "lp_perfect_foresight": "Perfect-foresight LP",
+        "tou": "TOU",
+        "uncontrolled": "Uncontrolled",
+    }
+    plot_summary = summary.copy()
+    plot_summary["label"] = plot_summary["strategy"].map(label_map)
+    figure, axes = plt.subplots(
+        1,
+        2,
+        figsize=(11.5, 4.8),
+        sharex=False,
+        gridspec_kw={"wspace": 0.32},
+    )
+    left = plot_summary.plot.bar(
+        x="label",
+        y="charging_cost_mean",
+        ax=axes[0],
+        legend=False,
+        color="#4C78A8",
+    )
+    left.set_ylabel("Mean charging cost")
+    left.set_xlabel("")
+    left.set_title("Mean Charging Cost")
+    left.tick_params(axis="x", labelrotation=35)
+    for tick in left.get_xticklabels():
+        tick.set_horizontalalignment("right")
+    left.margins(x=0.08)
+    left.bar_label(left.containers[0], fmt="%.3f", padding=3, fontsize=8)
+
+    right = plot_summary.plot.bar(
+        x="label",
+        y="peak_grid_import_kw_mean",
+        ax=axes[1],
+        legend=False,
+        color="#F58518",
+    )
+    right.set_ylabel("Mean peak grid import (kW)")
+    right.set_xlabel("")
+    right.set_title("Mean Peak Grid Import")
+    right.tick_params(axis="x", labelrotation=35)
+    for tick in right.get_xticklabels():
+        tick.set_horizontalalignment("right")
+    right.margins(x=0.08)
+    right.bar_label(right.containers[0], fmt="%.1f", padding=3, fontsize=8)
+
+    figure.suptitle("Charging Strategy Comparison", fontsize=14, fontweight="bold")
+    figure.tight_layout(rect=(0, 0, 1, 0.93))
+    figure.savefig(output / "strategy_summary.png", dpi=220, bbox_inches="tight")
     plt.close(figure)
     return summary
 

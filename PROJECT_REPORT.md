@@ -42,10 +42,20 @@ The adopted primary grid-emissions factor is 0.225209 kg CO2/kWh. This replaces
 the roadmap fallback of 0.4 kg CO2/kWh only because the implementation-ready
 common base documents a location-matched CAMX factor.
 
+We used the EPA eGRID2018 average emission factor for the CAMX
+(California-Mexico) region because it matches the California-based study
+geography. It represents average regional CO2 emitted per kWh generated.
+We replaced the original provisional 0.4 kg CO2/kWh assumption with this more
+geographically relevant, dataset-specific value.
+
 The following are explicitly documented assumptions or proxies:
 
 - ACN first/last telemetry timestamps represent arrival/departure proxies.
 - Maximum cumulative session telemetry energy represents delivered energy.
+- The cumulative ACN charging-energy value is treated as grid-side energy
+  delivered through the charging station. It is not battery-side energy, so the
+  0.9 charging-efficiency factor is not applied again. Applying 0.9 here would
+  double-count charging losses and overestimate grid energy consumption.
 - The 7.2 kW charger limit is a modelling assumption.
 - PV is 100 kWp at 80% performance ratio using horizontal GHI.
 - Base load is a constant 41.6667 kW.
@@ -149,6 +159,44 @@ Pasadena-area study, however, not a measurement of one real charging site, so
 the numerical totals should be interpreted as evidence of comparative behavior
 under the documented assumptions rather than guaranteed real-world savings.
 
+Other notable observations are:
+
+- LP smart charging used approximately 8.87 kWh of solar energy per scenario,
+  almost twice the uncontrolled and TOU values of approximately 4.53 kWh and
+  4.37 kWh.
+- Grid-energy imported by the primary LP was about 618.70 kWh per scenario,
+  compared with 623.04 kWh for uncontrolled charging and 623.20 kWh for TOU.
+  The grid-import reduction was therefore modest even though charging cost
+  improved substantially.
+- TOU charging had the highest mean peak grid import among the three core
+  strategies at 44.3183 kW, despite reducing mean charging cost relative to
+  uncontrolled charging.
+- The 1:1:1 sensitivity case reduced mean charging cost slightly relative to
+  1:5:2 (0.4172 versus 0.4214), but increased mean peak from 42.8953 kW to
+  43.0987 kW.
+- Perfect foresight is best interpreted as an ideal information benchmark.
+  Across the six complete held-out forecast scenarios, forecast-based LP stayed
+  close to perfect foresight.
+- The Random Forest did not outperform the 24-hour persistence baseline on the
+  held-out period, indicating a forecasting opportunity rather than a
+  demonstrated ML advantage.
+- All 45 scenario schedules were feasible for the core and sensitivity runs.
+  Forecast-LP coverage was deliberately restricted to six complete held-out
+  scenarios.
+- Mean CO2 followed mean grid import. The LP achieved 139.3362 kg compared
+  with 140.3139 kg for uncontrolled charging and 140.3499 kg for TOU, a small
+  reduction alongside the much larger cost and solar-utilization improvements.
+
+An additional notable result is that changing the LP objective weights from
+1:5:2 to 1:1:1 did not materially change mean peak grid import. The primary LP
+result was 42.8953 kW and the equal-weight sensitivity result was 43.0987 kW,
+which were both close to uncontrolled charging at 42.8891 kW. This suggests
+that, under the selected data and simulation assumptions, the optimization
+mainly improved charging cost and solar utilization rather than peak-demand
+reduction. The constant base-load profile, solar availability, EV charging
+requirements, and session availability windows may constrain the scope for
+further peak reduction.
+
 The real-data run processed 45 arrival-date scenarios and 100 EV sessions.
 Every strategy schedule was feasible in the 45-scenario perfect-foresight,
 uncontrolled, TOU, and sensitivity results.
@@ -224,3 +272,50 @@ forecast predictions, forecast metrics, and summary plots under
 - Tariff demand and customer charges are excluded.
 - The emissions factor is an average factor and is used as an evaluation metric,
   not an LP objective term.
+- Despite changing the LP weights from 1:5:2 to 1:1:1, mean peak grid import
+  remained nearly unchanged and close to uncontrolled charging. This is an
+  interesting dataset-specific result: the selected inputs may limit peak
+  reduction, while the LP primarily improves cost and solar utilization.
+- LP achieved almost twice the solar-to-EV energy of the uncontrolled and TOU
+  baselines, while the reduction in imported grid energy and CO2 was relatively
+  small.
+
+## 10. References and Data Sources
+
+### 10.1 Literature and Research
+
+The experimental framework was informed by existing research on EV charging
+coordination, grid-demand management, renewable-energy integration, and
+forecast-aware scheduling.
+
+1. Clement-Nyns, K., Haesen, E., & Driesen, J. (2010). “The Impact of Charging
+   Plug-In Hybrid Electric Vehicles on a Residential Distribution Grid.” *IEEE
+   Transactions on Power Systems*, 25(1), 371–380.
+   https://doi.org/10.1109/TPWRS.2009.2036481
+2. Deilami, S., Masoum, A. S., Moses, P. S., & Masoum, M. A. S. (2011).
+   “Real-Time Coordination of Plug-In Electric Vehicle Charging in Smart Grids
+   to Minimize Power Losses and Improve Voltage Profile.” *IEEE Transactions
+   on Smart Grid*, 2(3), 456–467.
+   https://doi.org/10.1109/TSG.2011.2159816
+3. Ardakanian, O., Rosenberg, C., & Keshav, S. (2014). “Quantifying the Benefits
+   of Extending Electric Vehicle Charging Deadlines with Solar Generation.”
+   IEEE SmartGridComm.
+   https://sites.ualberta.ca/~oardakan/files/sgc2014.pdf
+4. Lee, Z. J., Li, T., & Low, S. H. (2019). “ACN-Data: Analysis and Applications
+   of an Open EV Charging Dataset.” Proceedings of the Tenth ACM International
+   Conference on Future Energy Systems.
+   https://doi.org/10.1145/3307772.3328313
+
+### 10.2 Data Sources
+
+1. **EV charging sessions:** ACN-Data, California Garage (Caltech).
+   https://ev.caltech.edu/dataset
+2. **Solar generation:** Hourly Global Horizontal Irradiance data for the
+   Pasadena area, used to derive modeled solar generation.
+3. **Electricity tariff:** Southern California Edison (SCE), TOU-EV-4 tariff
+   schedule, reconstructed for the simulation.
+4. **Grid emissions:** US Environmental Protection Agency (EPA), eGRID2018,
+   CAMX regional average emission factor.
+   https://www.epa.gov/egrid/egrid2018-technical-support-document
+5. **Base load:** A constant non-EV base load of 41.6667 kW, adopted as a
+   simulation assumption.
