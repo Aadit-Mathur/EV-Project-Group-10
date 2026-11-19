@@ -4,7 +4,7 @@ import json
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Mapping, Sequence
-
+import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
@@ -102,6 +102,103 @@ def save_experiment(result: ExperimentResult, output_dir: str | Path) -> None:
         schedule.to_csv(output / f"{name}_schedule.csv", index=False)
 
 
+def _aggregate_profile(schedule: pd.DataFrame, timestamps: Sequence[pd.Timestamp]) -> np.ndarray:
+    frame = schedule.copy()
+    frame["timestamp"] = pd.to_datetime(frame["timestamp"], utc=True)
+    index = pd.DatetimeIndex(timestamps)
+    return (
+        frame.groupby("timestamp")["charging_power_kw"]
+        .sum()
+        .reindex(index, fill_value=0.0)
+        .to_numpy(dtype=float)
+    )
+
+
+def save_rebound_artifacts(
+    rebound_rows: list[dict],
+    profile_rows: list[dict],
+    output_dir: str | Path,
+) -> pd.DataFrame:
+    """Save real-data TOU rebound diagnostics and profiles."""
+
+    output = Path(output_dir)
+    rows = pd.DataFrame(rebound_rows)
+    rows.to_csv(output / "tou_rebound_peak.csv", index=False, float_format="%.6f")
+
+    tou_higher = int((rows["tou_peak_grid_kw"] > rows["uncontrolled_peak_grid_kw"] + 1e-9).sum())
+    tou_lower = int((rows["tou_peak_grid_kw"] < rows["uncontrolled_peak_grid_kw"] - 1e-9).sum())
+    tou_equal = int(len(rows) - tou_higher - tou_lower)
+    summary = pd.DataFrame(
+        [
+            {
+                "metric": "scenarios",
+                "value": len(rows),
+            },
+            {
+                "metric": "tou_peak_grid_higher_count",
+                "value": tou_higher,
+            },
+            {
+                "metric": "tou_peak_grid_lower_count",
+                "value": tou_lower,
+            },
+            {
+                "metric": "tou_peak_grid_equal_count",
+                "value": tou_equal,
+            },
+            {
+                "metric": "mean_peak_grid_change_pct",
+                "value": float(
+                    (
+                        (rows["tou_peak_grid_kw"] - rows["uncontrolled_peak_grid_kw"])
+                        / rows["uncontrolled_peak_grid_kw"].clip(lower=1e-12)
+                        * 100.0
+                    ).mean()
+                ),
+            },
+            {
+                "metric": "mean_tou_peak_ev_kw",
+                "value": float(rows["tou_peak_ev_kw"].mean()),
+            },
+            {
+                "metric": "mean_uncontrolled_peak_ev_kw",
+                "value": float(rows["uncontrolled_peak_ev_kw"].mean()),
+            },
+        ]
+    )
+    summary.to_csv(output / "tou_rebound_summary.csv", index=False, float_format="%.6f")
+
+    profiles = pd.DataFrame(profile_rows)
+    mean_profile = profiles.groupby("local_hour", as_index=False)[
+        ["uncontrolled_ev_kw", "tou_ev_kw", "uncontrolled_grid_kw", "tou_grid_kw"]
+    ].mean()
+    mean_profile.to_csv(output / "tou_rebound_mean_profile.csv", index=False, float_format="%.6f")
+
+    figure, axes = plt.subplots(1, 2, figsize=(11.5, 4.8), sharex=True)
+    axes[0].plot(mean_profile["local_hour"], mean_profile["uncontrolled_ev_kw"], marker="o", label="Uncontrolled")
+    axes[0].plot(mean_profile["local_hour"], mean_profile["tou_ev_kw"], marker="o", label="TOU")
+    axes[0].set_title("Mean EV charging load")
+    axes[0].set_xlabel("Pasadena local hour")
+    axes[0].set_ylabel("Aggregate EV power (kW)")
+    axes[0].legend()
+
+    axes[1].plot(mean_profile["local_hour"], mean_profile["uncontrolled_grid_kw"], marker="o", label="Uncontrolled")
+    axes[1].plot(mean_profile["local_hour"], mean_profile["tou_grid_kw"], marker="o", label="TOU")
+    axes[1].set_title("Mean site grid import")
+    axes[1].set_xlabel("Pasadena local hour")
+    axes[1].set_ylabel("Grid import (kW)")
+    axes[1].legend()
+
+    for axis in axes:
+        axis.set_xticks(range(0, 24, 3))
+        axis.grid(axis="y", alpha=0.25)
+    figure.suptitle("Real-Data TOU Rebound Diagnostic", fontsize=14, fontweight="bold")
+    figure.tight_layout(rect=(0, 0, 1, 0.93))
+    figure.savefig(output / "tou_rebound_profile.png", dpi=220, bbox_inches="tight")
+    plt.close(figure)
+    return summary
+
+
 def _forecast_inputs(package: Path, output: Path) -> tuple[dict[pd.Timestamp, float], pd.Timestamp]:
     baseline = pd.read_csv(package / "common_hourly_baseline.csv")
     frame = baseline.rename(
@@ -128,6 +225,8 @@ def run_real_experiment(
     prediction_map, test_start = _forecast_inputs(package, output)
     all_metrics: list[pd.DataFrame] = []
     all_modes: list[pd.DataFrame] = []
+    rebound_rows: list[dict] = []
+    profile_rows: list[dict] = []
     for scenario in scenarios:
         scenario_output = output / "scenarios" / scenario.scenario_id
         forecast_values = [
@@ -153,10 +252,56 @@ def run_real_experiment(
             modes.insert(1, "forecast_used", use_forecast)
             all_modes.append(modes)
 
+        uncontrolled_ev = _aggregate_profile(
+            result.schedules["uncontrolled"], scenario.timestamps
+        )
+        tou_ev = _aggregate_profile(result.schedules["tou"], scenario.timestamps)
+        base = np.asarray(scenario.base_load_kw, dtype=float)
+        solar = np.asarray(scenario.solar_kw, dtype=float)
+        uncontrolled_grid = np.maximum(0.0, base + uncontrolled_ev - solar)
+        tou_grid = np.maximum(0.0, base + tou_ev - solar)
+        uncon_peak_slot = int(np.argmax(uncontrolled_grid))
+        tou_peak_slot = int(np.argmax(tou_grid))
+        timestamps = pd.DatetimeIndex(scenario.timestamps)
+        rebound_rows.append(
+            {
+                "scenario_id": scenario.scenario_id,
+                "uncontrolled_peak_ev_kw": float(uncontrolled_ev.max()),
+                "tou_peak_ev_kw": float(tou_ev.max()),
+                "uncontrolled_peak_grid_kw": float(uncontrolled_grid.max()),
+                "tou_peak_grid_kw": float(tou_grid.max()),
+                "uncontrolled_peak_grid_slot": uncon_peak_slot,
+                "tou_peak_grid_slot": tou_peak_slot,
+                "uncontrolled_peak_local_hour": int(
+                    timestamps[uncon_peak_slot].tz_convert("America/Los_Angeles").hour
+                ),
+                "tou_peak_local_hour": int(
+                    timestamps[tou_peak_slot].tz_convert("America/Los_Angeles").hour
+                ),
+            }
+        )
+        for slot, timestamp in enumerate(timestamps[:24]):
+            local_hour = int(timestamp.tz_convert("America/Los_Angeles").hour)
+            profile_rows.append(
+                {
+                    "scenario_id": scenario.scenario_id,
+                    "local_hour": local_hour,
+                    "uncontrolled_ev_kw": float(uncontrolled_ev[slot]),
+                    "tou_ev_kw": float(tou_ev[slot]),
+                    "uncontrolled_grid_kw": float(uncontrolled_grid[slot]),
+                    "tou_grid_kw": float(tou_grid[slot]),
+                }
+            )
+
     metrics = pd.concat(all_metrics, ignore_index=True)
     modes = pd.concat(all_modes, ignore_index=True) if all_modes else pd.DataFrame()
     metrics.to_csv(output / "strategy_metrics_all_scenarios.csv", index=False)
     modes.to_csv(output / "information_mode_metrics_all_scenarios.csv", index=False)
+    rebound_summary = save_rebound_artifacts(
+        rebound_rows,
+        profile_rows,
+        output,
+    )
     (output / "run_metadata.json").write_text(
         json.dumps(
             {

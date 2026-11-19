@@ -1,0 +1,8 @@
+metric,value
+scenarios,45.000000
+tou_peak_grid_higher_count,14.000000
+tou_peak_grid_lower_count,0.000000
+tou_peak_grid_equal_count,31.000000
+mean_peak_grid_change_pct,3.317248
+mean_tou_peak_ev_kw,6.084584
+mean_uncontrolled_peak_ev_kw,6.084584

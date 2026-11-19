@@ -1,12 +1,12 @@
 {
   "target": "solar_kw",
   "metrics": {
-    "model_mae": 1.558790374753452,
-    "model_rmse": 2.3218854709396006,
+    "model_mae": 1.6759397238658753,
+    "model_rmse": 2.5817701171776166,
     "persistence_mae": 0.6968047337278108,
     "persistence_rmse": 2.043225203145564,
-    "validation_model_mae": 0.7841203174603151,
-    "validation_model_rmse": 1.3370414851300312,
+    "validation_model_mae": 0.7927073015872985,
+    "validation_model_rmse": 1.3518555940624253,
     "train_fraction": 0.7,
     "validation_fraction": 0.15,
     "test_fraction": 0.15000000000000005,

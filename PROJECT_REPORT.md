@@ -189,6 +189,13 @@ Other notable observations are:
 - TOU charging had the highest mean peak grid import among the three core
   strategies at 44.3183 kW, despite reducing mean charging cost relative to
   uncontrolled charging.
+- Using the 45 normalized schedules, TOU increased the grid peak in 14 of
+  45 scenarios and was equal in the remaining 31 (no scenario had a lower peak).
+  Across all scenarios, mean peak grid import increased by 3.32%. Its mean peak
+  grid import was 44.3183 kW versus 42.8891 kW for uncontrolled charging.
+  The real-data rebound profile is saved in
+  `Results/real_data/tou_rebound_profile.png`, with per-scenario details in
+  `Results/real_data/tou_rebound_peak.csv`.
 - The 1:1:1 sensitivity case reduced mean charging cost slightly relative to
   1:5:2 (0.4172 versus 0.4214), but increased mean peak from 42.8953 kW to
   43.0987 kW.
