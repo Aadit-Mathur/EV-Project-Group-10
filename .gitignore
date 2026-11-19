@@ -10,6 +10,9 @@ __pycache__/
 *.docx
 generate_report.py
 
+# Locally generated presentation deck (source and supporting assets are tracked)
+Presentation/EV_Smart_Charging_Presentation.pptx
+
 # Distribution / packaging
 .Python
 build/

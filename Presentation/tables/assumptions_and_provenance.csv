@@ -1,0 +1,10 @@
+item,presentation_note
+Study scope,100 ACN sessions across 45 local arrival-date scenarios
+EV session fields,Telemetry timestamps and cumulative energy are proxies
+EV power limit,7.2 kW per EV; modeling assumption
+Time step,Hourly slots; scenario windows shared by all strategies
+Solar,Open-Meteo ERA5 Pasadena GHI; 100 kWp × 0.80 PR PV model
+Non-EV base load,Constant 41.6667 kW; modeled assumption
+Tariff,SCE TOU-EV-4; later TOU period definitions mapped approximately
+Emissions,"0.225209 kg CO₂/kWh, EPA eGRID2018 CAMX average factor"
+System boundary,"Composite Pasadena-area simulation, not one measured facility"

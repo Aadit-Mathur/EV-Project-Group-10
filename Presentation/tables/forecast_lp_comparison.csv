@@ -1,0 +1,3 @@
+information_mode,scenarios,feasible,mean_incremental_charging_cost_usd_per_scenario,mean_peak_grid_import_kw,mean_solar_to_ev_kwh_per_scenario,mean_grid_energy_imported_kwh_per_scenario,mean_co2_kg_per_scenario
+Forecast-based LP,6,True,0.613204,45.743516,9.231342,550.797613,124.044580
+Perfect-foresight LP,6,True,0.599997,45.569399,9.231342,550.797613,124.044580

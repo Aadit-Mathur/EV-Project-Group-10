@@ -1,0 +1,4 @@
+scenario_id,strategy,feasible,incremental_charging_cost_usd,peak_grid_import_kw,solar_to_ev_kwh
+2018-06-11,Uncontrolled,True,3.570558,41.666667,2.085808
+2018-06-11,TOU,True,1.937382,48.866667,2.085808
+2018-06-11,LP smart charging,True,1.533102,48.866667,9.285808

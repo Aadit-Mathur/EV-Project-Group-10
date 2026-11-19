@@ -1,0 +1,3 @@
+run,scenarios,mean_incremental_charging_cost_usd_per_scenario,mean_peak_grid_import_kw,mean_solar_to_ev_kwh_per_scenario
+Sensitivity (1:1:1),45,0.417184,43.098701,8.868741
+Primary LP (1:5:2),45,0.421436,42.895261,8.868741

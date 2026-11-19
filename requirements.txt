@@ -10,3 +10,4 @@ PuLP>=2.7,<3
 jupyter
 pytest
 python-docx
+python-pptx>=1.0.2,<2.0.0
