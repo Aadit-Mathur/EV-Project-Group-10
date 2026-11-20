@@ -57,9 +57,11 @@ def forecast_target(
     validation_predictions = model.predict(features.loc[validation_rows]) if validation_rows.any() else []
     validation_actual = ordered.loc[validation_rows, target].to_numpy(dtype=float)
 
+    # Only observations known before the test tail may enter test features.
+    # Test-period actual values remain available solely for final scoring.
     recursive_values = ordered[target].copy()
+    recursive_values.loc[test_indices := ordered.index[test_rows].tolist()] = float("nan")
     predictions = []
-    test_indices = ordered.index[test_rows].tolist()
     for index in test_indices:
         row_timestamp = pd.Timestamp(ordered.loc[index, "timestamp"])
         lag_1_index = index - 1

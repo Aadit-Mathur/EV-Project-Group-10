@@ -16,14 +16,45 @@ def validate_schedule(schedule: pd.DataFrame, scenario: Scenario) -> list[str]:
     missing = required.difference(schedule.columns)
     if missing:
         return [f"missing schedule columns: {sorted(missing)}"]
+    if schedule[list(required)].isna().any().any():
+        errors.append("schedule contains missing required values")
+
+    try:
+        timestamps = pd.DatetimeIndex(scenario.timestamps)
+        schedule_timestamps = pd.to_datetime(schedule[ScheduleColumns.TIMESTAMP])
+    except (TypeError, ValueError):
+        errors.append("schedule contains invalid timestamps")
+        schedule_timestamps = pd.Series(dtype="datetime64[ns]")
+
+    if len(schedule_timestamps) and not schedule_timestamps.isin(timestamps).all():
+        errors.append("schedule contains timestamps outside the scenario horizon")
+    if len(schedule_timestamps) and schedule.assign(
+        _timestamp=schedule_timestamps
+    ).duplicated([ScheduleColumns.EV_ID, "_timestamp"]).any():
+        errors.append("schedule contains duplicate EV/timestamp rows")
+
     if schedule[ScheduleColumns.SCENARIO_ID].dropna().astype(str).nunique() > 1:
         errors.append("schedule contains multiple scenario IDs")
+
+    known_ids = {str(session.ev_id) for session in scenario.sessions}
+    schedule_ids = set(schedule[ScheduleColumns.EV_ID].dropna().astype(str))
+    if schedule_ids - known_ids:
+        errors.append("schedule contains unknown EV identifiers")
+
     for session in scenario.sessions:
-        rows = schedule[schedule[ScheduleColumns.EV_ID] == session.ev_id].copy()
+        rows = schedule[schedule[ScheduleColumns.EV_ID].astype(str) == str(session.ev_id)].copy()
         if len(rows) != scenario.slots:
             errors.append(f"{session.ev_id}: expected {scenario.slots} rows, got {len(rows)}")
             continue
-        powers = rows[ScheduleColumns.CHARGING_POWER_KW].to_numpy(dtype=float)
+        rows = rows.assign(_timestamp=schedule_timestamps.loc[rows.index])
+        rows = rows.set_index("_timestamp").reindex(timestamps)
+        if rows.isna().all(axis=1).any():
+            errors.append(f"{session.ev_id}: missing one or more scenario timestamps")
+        try:
+            powers = rows[ScheduleColumns.CHARGING_POWER_KW].to_numpy(dtype=float)
+        except (TypeError, ValueError):
+            errors.append(f"{session.ev_id}: charging power must be numeric")
+            continue
         if np.any(~np.isfinite(powers)) or np.any(powers < -1e-7):
             errors.append(f"{session.ev_id}: charging power must be finite and non-negative")
         for slot, power in enumerate(powers):

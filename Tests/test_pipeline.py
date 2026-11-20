@@ -1,13 +1,14 @@
+import numpy as np
+import pandas as pd
 import pytest
 
-from Helpers.evaluator import evaluate_schedule
+from Helpers.evaluator import evaluate_schedule, validate_schedule
 from Experiments.run_real import run_experiment
 from Experiments.run_real import save_rebound_artifacts
 from Helpers.data_pipeline import load_normalized_scenarios
 from Helpers.forecasting import forecast_target
 from TOU.scheduler import run_tou
 from Uncontrolled.scheduler import run_uncontrolled
-import pandas as pd
 
 
 @pytest.fixture
@@ -51,6 +52,55 @@ def test_normalized_chronological_forecast_contract():
     assert result.metrics["model_mae"] >= 0
     assert result.metrics["train_fraction"] == 0.70
     assert result.metrics["validation_fraction"] == 0.15
+
+
+def test_forecast_predictions_do_not_use_test_actuals():
+    baseline = pd.read_csv(
+        "Data/normalised/ev_common_base/common_hourly_baseline.csv"
+    ).rename(
+        columns={
+            "timestamp_utc": "timestamp",
+            "pv_generation_kw": "solar_kw",
+        }
+    )
+    frame = baseline[["timestamp", "solar_kw"]].copy()
+    result = forecast_target(frame, "solar_kw")
+    corrupted = frame.copy()
+    test_start = pd.Timestamp(result.metrics["test_start"])
+    timestamps = pd.to_datetime(corrupted["timestamp"], utc=True)
+    corrupted.loc[timestamps >= test_start, "solar_kw"] = 999999.0
+    corrupted_result = forecast_target(corrupted, "solar_kw")
+    np.testing.assert_allclose(
+        result.predictions["predicted"],
+        corrupted_result.predictions["predicted"],
+    )
+
+
+def test_evaluator_rejects_schema_availability_and_energy_errors(scenario):
+    schedule = run_uncontrolled(scenario)
+    assert validate_schedule(schedule, scenario) == []
+
+    bad_availability = schedule.copy()
+    session = scenario.sessions[0]
+    outside_slots = [
+        slot for slot in range(scenario.slots)
+        if not session.arrival <= slot < session.departure
+    ]
+    if outside_slots:
+        outside_timestamp = scenario.timestamps[outside_slots[0]]
+        bad_availability.loc[
+            (bad_availability["ev_id"].astype(str) == str(session.ev_id))
+            & (pd.to_datetime(bad_availability["timestamp"]) == pd.Timestamp(outside_timestamp)),
+            "charging_power_kw",
+        ] = 0.1
+        assert any("outside availability" in error for error in validate_schedule(bad_availability, scenario))
+
+    bad_schema = schedule.drop(columns=["timestamp"])
+    assert any("missing schedule columns" in error for error in validate_schedule(bad_schema, scenario))
+
+    bad_power = schedule.copy()
+    bad_power.loc[0, "charging_power_kw"] = -1.0
+    assert any("finite and non-negative" in error for error in validate_schedule(bad_power, scenario))
 
 
 def test_normalized_common_base_loads_all_scenarios():
